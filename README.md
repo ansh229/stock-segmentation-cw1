@@ -21,7 +21,6 @@ The executed Colab notebook is also included. Its default ROOT is `/content/stoc
 - `data_part1.zip` and `data_part2.zip` (extract to `data/`): source histories, constituent snapshot, retrieval provenance and failure log.
 - `outputs.zip` (extract to `outputs/`): features, exclusions, corporate actions, candidate k diagnostics, standardised inputs, cluster assignments, sensitivity results, figures and package versions.
 - `reviewed_selection.json`: reviewed k=2 for all four models.
-- `Stock_Segmentation_Report.docx`: coursework report with methods, results, and the AI assistance declaration.
 
 ## Results
 
