@@ -21,18 +21,12 @@ The executed Colab notebook is also included. Its default ROOT is `/content/stoc
 - `data_part1.zip` and `data_part2.zip` (extract to `data/`): source histories, constituent snapshot, retrieval provenance and failure log.
 - `outputs.zip` (extract to `outputs/`): features, exclusions, corporate actions, candidate k diagnostics, standardised inputs, cluster assignments, sensitivity results, figures and package versions.
 - `reviewed_selection.json`: reviewed k=2 for all four models.
-- `Stock_Segmentation_Report.docx`: report with space for student details and the eventual public repository URL.
+- `Stock_Segmentation_Report.docx`: coursework report with methods, results, and the AI assistance declaration.
 
-## Reviewed findings
+## Results
 
-486 of 503 shares retained; observation date 2024-12-31; 207 aligned weekly returns per share. Each four-model comparison has its highest silhouette at k=2 among k=2..8. Dendrograms support coarse splits but also show plausible finer divisions. The inertia curves have no decisive alternative elbow. Smaller tail groups appear at higher k. RFM Monetary-removal adjusted Rand index is 0.8734706266. No forecasting or diversification claim is made.
+The analysis retained 486 of 503 shares, with 207 aligned weekly returns per share and an RFM observation date of 31 December 2024. Across all four clustering comparisons, two clusters gave the highest silhouette score among the tested values of k (2–8). Removing Monetary from the Ward RFM model gave an adjusted Rand index of 0.8735.
 
-## Before submission
+## Data sources
 
-Repository: https://github.com/ansh229/stock-segmentation-cw1
-
-Complete your student details in the report and review the final wording. The assessment brief's AI rules and any tutor permission still apply. The report records AI assistance; a declaration alone does not establish permission.
-
-Market data are third-party data from Yahoo Finance and the list is from Wikipedia. No blanket licence is asserted over those source data. Source URLs and snapshot checksums are preserved in data/provenance.json.
-
-The three ZIP archives preserve the original directory contents and checksums. Extract them before running the offline command.
+The constituent list comes from Wikipedia, and the market histories come from Yahoo Finance. Source URLs and snapshot checksums are recorded in `data/provenance.json`.
